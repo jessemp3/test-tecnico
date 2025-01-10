@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+.bg-video {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    z-index: -1;
+  }
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/espaco.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-section{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-home-page{
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.title-home-page > span {
+    color: rgb(224, 224, 15);
+}
+
+#button-listar-filmes{
+    text-decoration: none !important;
+    background-color: white !important;
+    border: none !important;
+    border-color: transparent !important;
+    padding: 20px;
+    /* width: 10% !important; */
+    text-align: center;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: ease-in 0.4s;
+}
+
+#button-listar-filmes:hover{
+    background-color: rgb(224, 224, 15) !important;
+}
+
+.nav-link:hover{
+    color: rgb(224, 224, 15) !important;
+}
+
+
+@-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+
+
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 1.30s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 1.30s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+

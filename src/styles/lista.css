@@ -1,0 +1,44 @@
+.bg-light{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: transparent !important;
+}
+
+.bg-light-body {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo > img{
+    width: 30%;
+    height: 500px;
+    padding: 30px;
+}
+
+.conteudo img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.conteudo img:hover {
+    transform: scale(1.05);
+}
+
+
+
