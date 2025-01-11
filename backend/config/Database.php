@@ -14,6 +14,7 @@ class Database {
     private const DB_NAME = "starwars_db";
     private const USERNAME = "root";
     private const PASSWORD = "root";
+    private const PORT = "3306";
 
     private function __construct() {}
 
@@ -29,14 +30,16 @@ class Database {
             try {
                 $this->conn = new PDO(
                     "mysql:host=" . self::HOST . 
+                    ";port=" . self::PORT .
                     ";dbname=" . self::DB_NAME . 
-                    ";charset=utf8",
+                    ";charset=utf8mb4",
                     self::USERNAME,
                     self::PASSWORD,
                     [
                         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                        PDO::ATTR_EMULATE_PREPARES => false
+                        PDO::ATTR_EMULATE_PREPARES => false,
+                        PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4"
                     ]
                 );
             } catch (PDOException $e) {

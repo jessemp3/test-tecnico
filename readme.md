@@ -61,10 +61,10 @@ Aplicação web que exibe informações sobre os filmes de Star Wars, consumindo
 
    ```
 
-3.
+3. Como executar
 
-- Inicie Apache no XAMPP
-- Acesse: http://localhost/teste-tecnico/
+- Acesse o index.html dentro da pasta `src`
+- ou se você clonou para o xampp direto , entre através do localhost `http://localhost/teste-tecnico/src/lista.html`
 
 4. 💻 Endpoints da API
 
