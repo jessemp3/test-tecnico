@@ -64,6 +64,7 @@ Aplicação web que exibe informações sobre os filmes de Star Wars, consumindo
 3. Como executar
 
 - Acesse o index.html dentro da pasta `src`
+- Para a api funcionar o servidor apache tem que estar ligado e a pasta do projeto tem que estar dentro da pasta `htdocs` !
 - ou se você clonou para o xampp direto , entre através do localhost `http://localhost/teste-tecnico/src/lista.html`
 
 4. 💻 Endpoints da API
